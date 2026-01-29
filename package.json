@@ -1,0 +1,21 @@
+{
+  "name": "siteground-tests",
+  "version": "1.0.0",
+  "description": "E2E tests for Siteground using Playwright",
+  "author": {
+    "name": "Kristina Shtereva",
+    "email": "kristina.shtereva@gmail.com"
+  },
+  "scripts": {
+    "test": "rimraf output test-results test-report && npx playwright test",
+    "test email": "npx playwright test tests/emailSuite.spec.ts --reporter=html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^24.1.0",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
+  }
+}
