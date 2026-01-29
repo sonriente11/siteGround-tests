@@ -1,6 +1,6 @@
 Project installation 
 1. Open the project in Visual Studio Code
-2. Install dependencies: npm instal
+2. Install dependencies: npm install
 3. Run all tests in the Email suite: npm test email
 4. Optional:
    *add "--ui" - to run the tests in headed mode 
