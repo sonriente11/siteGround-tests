@@ -27,7 +27,7 @@ export default async function (page: Page) {
   await emailCategory.generatePassword.click();
   // 7. Verify that Password is populated
   const passwordValue = await emailCategory.passwordInputField.inputValue();
-  expect(passwordValue.length).toBeGreaterThan(0);
+  expect(passwordValue.length).toBeGreaterThan(1);
   // 8. Click on Create button
   await emailCategory.createNewAccountButton.click();
   // 9. Check that the successful message is displayed.
